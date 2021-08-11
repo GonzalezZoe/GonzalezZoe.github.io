@@ -97,29 +97,6 @@
     
     }
 
-.encabezado{
-position: relative;
-background-image: url(bebetonosnarajas.jpg);
-background-size: cover;
-background-position: center center;
-height: 60vh;
-width: 100%;
-}
-
-.encabezado .content p, h1{
-  padding: 10px;
-  font-size: 1.5rem;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.content{
-    width: 100%;
-      height: 100%;
-      background-color: rgba(54, 42, 31, 0.363);   
-}
-
-
 .container{
     position: relative;
     width: 100%;
@@ -292,4 +269,124 @@ margin-top: 5%;
     .wave2 {
     opacity: 0.8;    
     z-index: 10;
+    }
+
+    .wrap{
+        color: #fff; 
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative; 
+        width: 90%;
+          padding: 1em;
+          margin: 0 auto;
+          padding: 40px;
+    margin-top: 5%;
+    }
+
+    .wrap h1{
+     font-size: 3em;
+     text-align: center;   
+     font-weight: 500;
+    }
+
+    .wrap p{
+        text-align: center;
+        font-size: 1.6em;
+        color: #79452d;
+        margin: 8px;
+    }
+
+    .content-box{
+        display: flex;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+    }
+
+    .card{
+       min-height: 400px;
+       height: 40%;
+       width: 45%;
+       padding: 30px;
+       border-radius: 5px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+        background: #81472c;
+        margin: 10px 4px;
+    }
+
+    .card i{
+        margin: 20px;
+        color: #000000;
+        font-size: 3em;
+    }
+
+    .card h2{
+        margin: 12px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .card p{
+color: #cab4a8;
+    }
+
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+
+    .card:nth-child(1):hover{
+        background: linear-gradient(45deg, 
+                                     rgba(151, 71, 18, 0.7) 0%,
+                                     rgba(151, 71, 18, 0.7) 100%),
+                                     url('bebebalde.jpg');
+                  background-size: cover;                   
+    }
+
+    .card:nth-child(2):hover{
+        background: linear-gradient(45deg, 
+                                     rgba(151, 71, 18, 0.7) 0%,
+                                     rgba(151, 71, 18, 0.7) 100%),
+                                     url('quince.jpg');
+                  background-size: cover;                   
+    }
+
+    .card:nth-child(3):hover{
+        background: linear-gradient(45deg, 
+        rgba(151, 71, 18, 0.7) 0%,
+        rgba(151, 71, 18, 0.7) 100%),
+                                     url(casamiento.jpeg);
+                  background-size: cover;                   
+    }
+
+    .card:nth-child(4):hover{
+        background: linear-gradient(45deg, 
+        rgba(151, 71, 18, 0.7) 0%,
+        rgba(151, 71, 18, 0.7) 100%),
+                                     url(bebebalde.jpg);
+                  background-size: cover;                   
+    }
+
+    .card:nth-child(5):hover{
+        background: linear-gradient(45deg, 
+        rgba(151, 71, 18, 0.7) 0%,
+        rgba(151, 71, 18, 0.7) 100%),
+                                     url(gatoblanco.jpg);
+                  background-size: cover;                   
+    }
+
+    .card:nth-child(6):hover{
+        background: linear-gradient(45deg, 
+        rgba(151, 71, 18, 0.7) 0%,
+        rgba(151, 71, 18, 0.7) 100%),
+                                     url(embarazada.jpg);
+                  background-size: cover;                   
     }

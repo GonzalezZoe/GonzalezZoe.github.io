@@ -3,7 +3,10 @@
 <html>
 
 <head>
-    <title> Little Bear Fotografia - Portfolio </title>
+    <title> Prenguntas - Little Bear Fotografia  </title>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
     <meta charset="UTF-8">
     <link rel="icon" href="ico.ico">
 <link href="faQstyle.css" rel="stylesheet">
@@ -128,7 +131,7 @@
 
     <h2>CONTACTANOS</h2>
   
-    <form id="contact" action="#" method="post">
+    <form id="contact" action="Pagina-Confirm.html" method="post">
       <div class="left">
         <input type="text" placeholder="NOMBRE" required="required"/>
         <input type="email" placeholder="EMAIL" required="required"/>
@@ -139,6 +142,19 @@
       <div class="right">
         <textarea placeholder="MENSAJE" required="required"></textarea>
       </div>
+
+      <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+      async defer>
+  </script>
+  
+      <div class="g-recaptcha" data-sitekey="6LcPw_MbAAAAAP_WoNhf7XPmd1IiC-AvBqvVJjN1"></div>
+
+      <script type="text/javascript">
+        var onloadCallback = function() {
+          alert("No olvides de completar el ReCaptcha al enviarnos un mensaje!");
+        };
+      </script>
+
       <div class="send-button cl">
         <button type="submit">ENVIAR</button>
       </div>

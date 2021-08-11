@@ -133,11 +133,11 @@
    .welcome h1{
        color: #fff; 
        margin-bottom: 10px;  
-       font-family: 'EB Garamond', serif;
+       font-family: 'Atkinson Hyperlegible', sans-serif;
    }
    
    .welcome p{
-       font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
    color: #68412f;
    }
    
@@ -381,7 +381,26 @@ main {
 
     }
 
+    #map{
+        height: 500px;
+        width: 80%;
+        align-items: center;
+        margin: 0 auto;
+border: solid 1px #6e3f2a;
+    }
 
+
+   .findus{
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 5%;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+   } 
 
       
    
