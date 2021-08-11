@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title> Contacto -  Little Bear </title>
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
+
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="ico.ico">
+<link href="styleContact.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+
+<header> 
+<nav> 
+<input type="checkbox" id="check">    
+<label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+</label>
+<ul>
+  <li><a href="homenew.html" class="active" target="_blank">Inicio</a></li>
+  <li><a href="Portfolio.html" target="_blank">Portfolio</a></li>   
+  <li><a href="servicios.html" target="_blank">Servicios</a></li>   
+  <li><a href="Contacto.html" target="_blank">Contacto</a></li>   
+  <li><a href="faq.html" target="_blank">FaQ</a></li>       
+</ul>
+</nav>
+</header>
+
+<main>
+
+
+<a href="https://api.whatsapp.com/send?phone=5491165761344" class="btn-wsp" target="_blank">  <i class="fab fa-whatsapp"></i> </a>
+
+
+
+    <div class="welcome">
+        <h1>¡No olvides dejarnos tu mensaje!</h1>
+      <p> Puedes consultar todas tus dudas o solicitar nuestros servicios <span>¡Contactanos!</span></p>  
+    <img src="Logoheader.png" alt="Little-Bear-Firma">
+
+    <hr>
+
+    </div>
+
+
+    <div class="contactus">
+    
+      <p>¡Sientase libre de realizar consultas o solicitar nuestros servicios en cualquiera de nuestras redes sociales!</p>
+      <div class="redes-contact">
+      <a href="https://www.facebook.com/LittleBearArgentina" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/littlebear.argentina/" target="_blank"><i class="fab fa-instagram"></i></a>   
+      <a href="https://api.whatsapp.com/send?phone=5491165761344" target="_blank"><i class="fas fa-phone"></i></a>
+      <a href="mailto:littlebearargentina@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    </div>
+
+<hr>
+
+    <div class="container">
+
+        <h2>Envianos tu mensaje</h2>
+      
+        <form id="contact" action="contacto.html" method="post">
+          <div class="left">
+            <input type="text" placeholder="NOMBRE" required="required"/>
+            <input type="email" placeholder="EMAIL" required="required"/>
+            <input type="text" placeholder="ASUNTO" required="required"/>
+            <input type="tel" placeholder="NUMERO" required="required"/>
+          </div>
+          <div class="right">
+            <textarea placeholder="MENSAJE" required="required"></textarea>
+          </div>
+
+          <script type="text/javascript">
+            var onloadCallback = function() {
+              alert("grecaptcha is ready!");
+            };
+          </script>
+          
+          <div class="g-recaptcha" data-sitekey="6LcruPMbAAAAAIuuht4G44Dm-GYHN61yBN07R_i_"></div>
+
+
+          <div class="send-button cl">
+            <button type="submit">ENVIAR</button>
+          </div>
+        </form>
+      </div>
+  
+
+</main>
+<div class="foot"></div>
+<div class="olas">
+  <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-1.98,62.65 C194.41,299.50 349.20,-50.00 552.20,137.65 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #44342c;"></path></svg></div>
+  <div class="wave2" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-2.55,134.70 C178.04,-54.78 371.61,334.03 577.03,-43.92 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #8a5b45;"></path></svg></div>
+  </div>
+  
+  <footer class="footer"> 
+  
+  <div class="socials">
+      <a href="https://www.facebook.com/LittleBearArgentina"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/littlebear.argentina/"><i class="fab fa-instagram"></i></a>   
+  </div>
+  <div class="copy">
+   &copy Copyright 2021 
+  <a href="https://gonzalezzoe.github.io/">LittleBear</a>    
+  </div>
+  </footer>
+</div>
+
+    </body>
+    </html>

@@ -1,0 +1,388 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;  
+    list-style: none;  
+    box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;  
+        background: #0f0d06;
+        min-height: 100%;
+    }
+    
+    
+    header {
+    position: relative;    
+    }
+
+    html, body {
+        height: 100%;
+    }
+    
+
+    nav {
+        position: relative;
+        width: 100%;
+        height: 75px;
+        line-height: 120px;
+        padding: 0px 85px;
+    }
+    
+    nav ul {
+        float: right;
+    
+    }
+    nav ul li {
+    display: inline-block;    
+    }
+    
+    nav ul li a {
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 0px 20px;
+    }
+    
+    nav ul li a:hover {
+    color: #614902;    
+    }
+    
+    nav ul .active {
+        color: #fff;     
+    }
+    
+    .checkbtn {
+        font-size: 25px;
+        cursor: pointer;
+        float: right;
+        display: none;
+        color: #fff;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    @media screen and (max-width: 990px){
+    nav {
+    padding: 0px 50px;    
+    }  
+    .checkbtn {
+    display: block;
+    }
+    
+    nav ul {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 75px;
+    left: -100%;
+    background: #29220f;  
+    text-align: center;  
+    transition: 0.4s ease;
+    z-index: 20;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 60px 0px;
+        line-height: 20px;
+    }
+    
+    #check:checked ~ ul{
+    left: 0;    
+    }
+    
+    }
+
+.btn-wsp{
+    position: fixed;
+    bottom: 15px;
+    height: 80px;
+    width: 80px;
+    right: 20px;
+    color: #fff;
+    background: rgb(0, 151, 63);
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    font-size: 55px;
+    box-shadow: 0px 2px 10px rgba(59, 35, 13, 0.5);
+    text-decoration: none;
+    z-index: 200;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+}
+
+
+.welcome{
+    margin: 0 auto;
+   padding: 20px;
+   width: 50%;
+   color: #fff;
+   text-align: center;
+   align-items: center;
+   font-size: 2rem;
+   margin-top: 5%;
+   }   
+   
+   .welcome h1{
+       color: #fff; 
+       margin-bottom: 10px;  
+       font-family: 'EB Garamond', serif;
+   }
+   
+   .welcome p{
+       font-family: 'Open Sans Condensed', sans-serif;
+   color: #68412f;
+   }
+   
+   .welcome p span{
+       color: #fff;    
+   }
+   
+   .welcome img{
+   width: 60%;
+   max-width: 500px;  
+   }
+   
+   @media screen and (max-width:550px) {
+       .welcome{
+       width: 70%;
+       max-width: fit-content; 
+       font-size: 1.2rem;  
+       }
+   
+       .welcome img{
+       width: 80%;
+       max-width: fit-content;    
+       }
+       }
+
+       .welcome hr {
+        margin: 10% 5%;
+        color: #68412f;    
+        }
+
+        hr {
+            margin: 5% 5%;
+            color: #68412f;    
+        }
+
+     
+
+        .container{
+            position: relative;
+            width: 100%;
+              padding: 1em;
+              margin: 0 auto;
+             border: 1px solid #ad5e39;
+              border-radius: 20px;
+              padding: 40px;
+          }
+          
+          .container h2{
+          text-align: center;
+              text-transform: uppercase;
+              color: #8a4d31;
+              font-family: Cormorant Garamond, Helvetica, Arial, sans-serif;
+              padding-bottom: 20px;
+              font-size: 30px;
+          }
+          
+          #contact input[type="tel"], #contact input[type="text"],#contact input[type="email"] {
+              display: block;
+              padding: 10px;
+              margin: 10px auto;
+              width: 100%;
+              font-size: 18px;
+              color: #f0a580;
+              border: none;
+              background: none;
+              border-bottom: 1px solid #8a4d31;
+              outline: none;
+          }
+
+.right textarea {
+    display: block;
+	padding: 10px;
+	margin: 10px auto;
+	width: 100%;
+	font-size: 18px;
+    color: #d49b7e;
+    border: none;
+    background: none;
+    border: 1px solid #6e3f2a;
+    outline: none;
+}
+
+#contact textarea{
+	font-size: 20px;
+}
+
+#contact textarea{
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 180px;
+	min-height: 180px;
+  resize: none;
+}
+
+#contact .send-button{
+	text-align: center;
+}
+
+#contact .send-button button[type="submit"]{
+	color: #fff;
+  background: #68412f;
+  border: none;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 20px;
+	transition: .5s all ease;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#contact .send-button button[type="submit"]:hover{
+	background: #8a4d31;
+}
+
+#contact .send-button button[type="submit"]:focus{
+	position: relative;
+	top: 2px;
+}
+
+
+@media screen and (min-width: 640px){
+	.container{
+		width: 600px;
+	}
+  
+  #contact textarea{
+    max-width: 98%;
+    min-width: 98%;
+    min-height: 215px;
+    margin-right: 0;
+  }
+
+	#contact .right,#contact .left{
+		display: block;
+	}
+
+	#contact .right{
+		float: right;
+		width: 50%;
+	}
+  
+	#contact .left{
+		float: left;
+		width: 50%;
+	}
+	.cl{
+    clear: both;
+  }
+}
+
+.contactus {
+    position: relative;
+  width: 100%;
+	padding: 1em;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.contactus p{
+  font-size: 1.5rem;  
+  padding: 10px;
+  color: #fff;
+}
+
+.redes-contact a{
+  font-size: 25px;  
+  letter-spacing: 10px;
+  color: #ffb390;
+}
+
+main {
+    position: relative;
+    min-height: 100%;
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    max-width: fit-content;
+    margin: 0 auto;   
+    height: 150px;
+    background: #44342c; 
+    max-width: 100%;
+    margin-bottom: 0;
+    
+    }
+    
+    .copy {
+     position: absolute;
+     width: 100%;
+     color: #fff;
+     bottom: 0;
+     background: #0f0d06;
+     text-align: center;
+    padding: 20px;
+    opacity: 0.5;
+    width: 100%;
+    max-width: 100%;
+    }
+    
+    .copy a{
+    color: #fff;    
+    }
+    
+    .socials{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    }
+    
+    .socials a{
+        color: #fff;    
+        margin: 0 15px; 
+        font-size: 40px;
+    }
+    
+    .socials a:hover{
+    color: #29220f;   
+    }
+    
+   
+    .wave {
+        width: 100%;
+    position: absolute;
+    z-index: 20;
+  
+    }
+    
+    .wave2 {
+    opacity: 0.8;    
+    z-index: 10;
+
+    }
+
+
+.g-recaptcha {
+margin: 0 auto;
+}
+      
+   
