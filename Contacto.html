@@ -5,10 +5,7 @@
 <head>
     <title> Contacto -  Little Bear </title>
 
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-    async defer>
-</script>
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <meta charset="UTF-8">
     <link rel="icon" href="ico.ico">
@@ -79,8 +76,13 @@
           <div class="right">
             <textarea placeholder="MENSAJE" required="required"></textarea>
           </div>
-          
-          <div class="g-recaptcha" data-sitekey="6LcruPMbAAAAAIuuht4G44Dm-GYHN61yBN07R_i_"></div>
+
+          <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+          async defer>
+      </script>
+      
+    
+          <div class="g-recaptcha" data-sitekey="6LcPw_MbAAAAAP_WoNhf7XPmd1IiC-AvBqvVJjN1"></div>
 
           <div class="send-button cl">
             <button type="submit">ENVIAR</button>
